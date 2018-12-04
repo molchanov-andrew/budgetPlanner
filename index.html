@@ -1,0 +1,1084 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="assets/style.css">
+        <script src="jquery-3.2.1.min.js"></script>
+        <title>BudgetPlanner</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h2>Планувальник бюджету</h2>
+            <div class="items">
+                <div class="title">
+                    <a href="#">1. Відомості про доходи</a>
+                </div>
+                <div class="content">
+                    <div class="content-item head">
+                        <div>
+                        </div>
+                        <div>
+                            <span>Періодичність</span>
+                        </div>
+                        <div>
+                            <span>Сума</span>
+                        </div>
+                        <div>
+                            <span>Всього в рік</span>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <div>
+                            <span>Державна пенсія</span>
+                        </div>
+                        <div class="inputData">
+                            <select name="salaryFrequency" class="period">
+                                <option value="Weekly" selected>Тижнева</option>
+                                <option value="Monthly">Місячна</option>
+                                <option value="Annualy">Річна</option>
+                            </select>
+                        </div>
+                        <div class="inputData">
+                            <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                        </div>
+                        <div class="amountTotal"><span>грн </span>0</div>
+                    </div>
+                    <div class="content-item lighter">
+                        <div>
+                            <span>Недержавна пенсія</span>
+                        </div>
+                        <div class="inputData">
+                            <select name="salaryFrequency" class="period">
+                                <option value="Weekly" selected>Тижнева</option>
+                                <option value="Monthly">Місячна</option>
+                                <option value="Annualy">Річна</option>
+                            </select>
+                        </div>
+                        <div class="inputData">
+                            <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                        </div>
+                        <div class="amountTotal"><span>грн </span>0</div>
+                    </div>
+                    <div class="content-item">
+                        <div>
+                            <span>Доходи від інвестицій</span>
+                        </div>
+                        <div class="inputData">
+                            <select name="salaryFrequency" class="period">
+                                <option value="Weekly" selected>Тижнева</option>
+                                <option value="Monthly">Місячна</option>
+                                <option value="Annualy">Річна</option>
+                            </select>
+                        </div>
+                        <div class="inputData">
+                            <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                        </div>
+                        <div class="amountTotal"><span>грн </span>0</div>
+                    </div>
+                    <div class="content-item lighter">
+                        <div>
+                            <span>Інші доходи (допомога)</span>
+                        </div>
+                        <div class="inputData">
+                            <select name="salaryFrequency" class="period">
+                                <option value="Weekly" selected>Тижнева</option>
+                                <option value="Monthly">Місячна</option>
+                                <option value="Annualy">Річна</option>
+                            </select>
+                        </div>
+                        <div class="inputData">
+                            <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                        </div>
+                        <div class="amountTotal"><span>грн </span>0</div>
+                    </div>
+                    <div class="total">
+                        
+                    </div>
+                    <div class="content-item lighter"></div>
+                </div>
+            </div>
+            <div class="items">
+                <div class="title">
+                    <a href="#">2. Автомобіль / Транспорт</a>
+                </div>
+                <div class="content">
+                    <div class="content-item head">
+                        <div>
+                        </div>
+                        <div>
+                            <span>Періодичність</span>
+                        </div>
+                        <div>
+                            <span>Сума</span>
+                        </div>
+                        <div>
+                            <span>Всього в рік</span>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <div>
+                            <span>Тех. обслуг. / ремонт</span>
+                        </div>
+                        <div class="inputData">
+                            <select name="salaryFrequency" class="period">
+                                <option value="Weekly" selected>Тижнева</option>
+                                <option value="Monthly">Місячна</option>
+                                <option value="Annualy">Річна</option>
+                            </select>
+                        </div>
+                        <div class="inputData">
+                            <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                        </div>
+                        <div class="amountTotal"><span>грн </span>0</div>
+                    </div>
+                    <div class="content-item lighter">
+                        <div>
+                            <span>Пальне</span>
+                        </div>
+                        <div class="inputData">
+                            <select name="salaryFrequency" class="period">
+                                <option value="Weekly" selected>Тижнева</option>
+                                <option value="Monthly">Місячна</option>
+                                <option value="Annualy">Річна</option>
+                            </select>
+                        </div>
+                        <div class="inputData">
+                            <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                        </div>
+                        <div class="amountTotal"><span>грн </span> 0</div>
+                    </div>
+                    <div class="content-item">
+                        <div>
+                            <span>Громадьский транспорт / таксі</span>
+                        </div>
+                        <div class="inputData">
+                            <select name="salaryFrequency" class="period">
+                                <option value="Weekly" selected>Тижнева</option>
+                                <option value="Monthly">Місячна</option>
+                                <option value="Annualy">Річна</option>
+                            </select>
+                        </div>
+                        <div class="inputData">
+                            <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                        </div>
+                        <div class="amountTotal"><span>грн </span>0</div>
+                    </div>
+                    <div class="content-item lighter">
+                        <div>
+                            <span>Паркування</span>
+                        </div>
+                        <div class="inputData">
+                            <select name="salaryFrequency" class="period">
+                                <option value="Weekly" selected>Тижнева</option>
+                                <option value="Monthly">Місячна</option>
+                                <option value="Annualy">Річна</option>
+                            </select>
+                        </div>
+                        <div class="inputData">
+                            <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                        </div>
+                        <div class="amountTotal"><span>грн </span>0</div>
+                    </div>
+                    <div class="content-item">
+                        <div>
+                            <span>Інше</span>
+                        </div>
+                        <div class="inputData">
+                            <select name="salaryFrequency" class="period">
+                                <option value="Weekly" selected>Тижнева</option>
+                                <option value="Monthly">Місячна</option>
+                                <option value="Annualy">Річна</option>
+                            </select>
+                        </div>
+                        <div class="inputData">
+                            <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                        </div>
+                        <div class="amountTotal">грн 0
+                        </div>
+                    </div>
+                    <div class="total">
+                        
+                    </div>
+                    <div class="content-item lighter"></div>
+                </div>
+            </div>
+            <div class="items">
+                <div class="title">
+                    <a href="#">3. Витрати на життя</a>
+                </div>
+                <div class="content">
+                    <div class="content-item head">
+                        <div>
+                        </div>
+                        <div>
+                            <span>Періодичність</span>
+                        </div>
+                        <div>
+                            <span>Сума</span>
+                        </div>
+                        <div>
+                            <span>Всього в рік</span>                </div>
+                        </div>
+                        <div class="content-item">
+                            <div>
+                                <span>Оренда</span>
+                            </div>
+                            <div class="inputData">
+                                <select name="salaryFrequency" class="period">
+                                    <option value="Weekly" selected>Тижнева</option>
+                                    <option value="Monthly">Місячна</option>
+                                    <option value="Annualy">Річна</option>
+                                </select>
+                            </div>
+                            <div class="inputData">
+                                <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                            </div>
+                            <div class="amountTotal"><span>грн</span> 0</div>
+                        </div>
+                        <div class="content-item lighter">
+                            <div>
+                                <span>Газ, вода, електроенергія</span>
+                            </div>
+                            <div class="inputData">
+                                <select name="salaryFrequency" class="period">
+                                    <option value="Weekly" selected>Тижнева</option>
+                                    <option value="Monthly">Місячна</option>
+                                    <option value="Annualy">Річна</option>
+                                </select>
+                            </div>
+                            <div class="inputData">
+                                <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                            </div>
+                            <div class="amountTotal"><span>грн</span> 0</div>
+                        </div>
+                        <div class="content-item">
+                            <div>
+                                <span>Інтернет, телефонія</span>
+                            </div>
+                            <div class="inputData">
+                                <select name="salaryFrequency" class="period">
+                                    <option value="Weekly" selected>Тижнева</option>
+                                    <option value="Monthly">Місячна</option>
+                                    <option value="Annualy">Річна</option>
+                                </select>
+                            </div>
+                            <div class="inputData">
+                                <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                            </div>
+                            <div class="amountTotal"><span>грн </span>0</div>
+                        </div>
+                        <div class="content-item lighter">
+                            <div>
+                                <span>Продукти харчування</span>
+                            </div>
+                            <div class="inputData">
+                                <select name="salaryFrequency" class="period">
+                                    <option value="Weekly" selected>Тижнева</option>
+                                    <option value="Monthly">Місячна</option>
+                                    <option value="Annualy">Річна</option>
+                                </select>
+                            </div>
+                            <div class="inputData">
+                                <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                            </div>
+                            <div class="amountTotal"><span>грн </span>0</div>
+                        </div>
+                        <div class="content-item">
+                            <div>
+                                <span>Медицина (фармацевтика)</span>
+                            </div>
+                            <div class="inputData">
+                                <select name="salaryFrequency" class="period">
+                                    <option value="Weekly" selected>Тижнева</option>
+                                    <option value="Monthly">Місячна</option>
+                                    <option value="Annualy">Річна</option>
+                                </select>
+                            </div>
+                            <div class="inputData">
+                                <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                            </div>
+                            <div class="amountTotal"><span>грн </span>0</div>
+                        </div>
+                        <div class="content-item lighter">
+                            <div>
+                                <span>Одяг/взуття</span>
+                            </div>
+                            <div class="inputData">
+                                <select name="salaryFrequency" class="period">
+                                    <option value="Weekly" selected>Тижнева</option>
+                                    <option value="Monthly">Місячна</option>
+                                    <option value="Annualy">Річна</option>
+                                </select>
+                            </div>
+                            <div class="inputData">
+                                <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                            </div>
+                            <div class="amountTotal"><span>грн </span>0</div>
+                        </div>
+                        <div class="content-item">
+                            <div>
+                                <span>Освіта</span>
+                            </div>
+                            <div class="inputData">
+                                <select name="salaryFrequency" class="period">
+                                    <option value="Weekly" selected>Тижнева</option>
+                                    <option value="Monthly">Місячна</option>
+                                    <option value="Annualy">Річна</option>
+                                </select>
+                            </div>
+                            <div class="inputData">
+                                <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                            </div>
+                            <div class="amountTotal"><span>грн </span>0</div>
+                        </div>
+                        <div class="content-item lighter">
+                            <div>
+                                <span>Фурнітура, меблі</span>
+                            </div>
+                            <div class="inputData">
+                                <select name="salaryFrequency" class="period">
+                                    <option value="Weekly" selected>Тижнева</option>
+                                    <option value="Monthly">Місячна</option>
+                                    <option value="Annualy">Річна</option>
+                                </select>
+                            </div>
+                            <div class="inputData">
+                                <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                            </div>
+                            <div class="amountTotal"><span>грн </span>0</div>
+                        </div>
+                        <div class="content-item">
+                            <div>
+                                <span>Домашні тварини</span>
+                            </div>
+                            <div class="inputData">
+                                <select name="salaryFrequency" class="period">
+                                    <option value="Weekly" selected>Тижнева</option>
+                                    <option value="Monthly">Місячна</option>
+                                    <option value="Annualy">Річна</option>
+                                </select>
+                            </div>
+                            <div class="inputData">
+                                <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                            </div>
+                            <div class="amountTotal"><span>грн </span>0</div>
+                        </div>
+                        <div class="content-item lighter">
+                            <div>
+                                <span>Догляд за дітьми/школа</span>
+                            </div>
+                            <div class="inputData">
+                                <select name="salaryFrequency" class="period">
+                                    <option value="Weekly" selected>Тижнева</option>
+                                    <option value="Monthly">Місячна</option>
+                                    <option value="Annualy">Річна</option>
+                                </select>
+                            </div>
+                            <div class="inputData">
+                                <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                            </div>
+                            <div class="amountTotal"><span>грн </span>0</div>
+                        </div>
+                        <div class="content-item">
+                            <div>
+                                <span>Інші витрати</span>
+                            </div>
+                            <div class="inputData">
+                                <select name="salaryFrequency" class="period">
+                                    <option value="Weekly" selected>Тижнева</option>
+                                    <option value="Monthly">Місячна</option>
+                                    <option value="Annualy">Річна</option>
+                                </select>
+                            </div>
+                            <div class="inputData">
+                                <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                            </div>
+                            <div class="amountTotal"><span>грн </span>0</div>
+                        </div>
+                        <div class="total">
+                            
+                        </div>
+                        <div class="content-item lighter"></div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="title">
+                        <a href="#">4. Страхування/пенсійне страхування</a>
+                    </div>
+                    <div class="content">
+                        <div class="content-item head">
+                            <div>
+                            </div>
+                            <div>
+                                <span>Періодичність</span>
+                            </div>
+                            <div>
+                                <span>Сума</span>
+                            </div>
+                            <div>
+                                <span>Всього в рік</span>                </div>
+                            </div>
+                            <div class="content-item">
+                                <div>
+                                    <span>Страхування життя</span>
+                                </div>
+                                <div class="inputData">
+                                    <select name="salaryFrequency" class="period">
+                                        <option value="Weekly" selected>Тижнева</option>
+                                        <option value="Monthly">Місячна</option>
+                                        <option value="Annualy">Річна</option>
+                                    </select>
+                                </div>
+                                <div class="inputData">
+                                    <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                                </div>
+                                <div class="amountTotal"><span>грн </span> 0</div>
+                            </div>
+                            <div class="content-item lighter">
+                                <div>
+                                    <span>Нерухомість</span>
+                                </div>
+                                <div class="inputData">
+                                    <select name="salaryFrequency" class="period">
+                                        <option value="Weekly" selected>Тижнева</option>
+                                        <option value="Monthly">Місячна</option>
+                                        <option value="Annualy">Річна</option>
+                                    </select>
+                                </div>
+                                <div class="inputData">
+                                    <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                                </div>
+                                <div class="amountTotal"><span>грн </span>0</div>
+                            </div>
+                            <div class="content-item">
+                                <div>
+                                    <span>КАСКО</span>
+                                </div>
+                                <div class="inputData">
+                                    <select name="salaryFrequency" class="period">
+                                        <option value="Weekly" selected>Тижнева</option>
+                                        <option value="Monthly">Місячна</option>
+                                        <option value="Annualy">Річна</option>
+                                    </select>
+                                </div>
+                                <div class="inputData">
+                                    <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                                </div>
+                                <div class="amountTotal"><span>грн </span>0</div>
+                            </div>
+                            <div class="content-item lighter">
+                                <div>
+                                    <span>Бізнес</span>
+                                </div>
+                                <div class="inputData">
+                                    <select name="salaryFrequency" class="period">
+                                        <option value="Weekly" selected>Тижнева</option>
+                                        <option value="Monthly">Місячна</option>
+                                        <option value="Annualy">Річна</option>
+                                    </select>
+                                </div>
+                                <div class="inputData">
+                                    <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                                </div>
+                                <div class="amountTotal"><span>грн </span>0</div>
+                            </div>
+                            <div class="content-item">
+                                <div>
+                                    <span>Інше (човен, причіп)</span>
+                                </div>
+                                <div class="inputData">
+                                    <select name="salaryFrequency" class="period">
+                                        <option value="Weekly" selected>Тижнева</option>
+                                        <option value="Monthly">Місячна</option>
+                                        <option value="Annualy">Річна</option>
+                                    </select>
+                                </div>
+                                <div class="inputData">
+                                    <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                                </div>
+                                <div class="amountTotal"><span>грн </span>0</div>
+                            </div>
+                            <div class="total">
+                                
+                            </div>
+                            <div class="content-item lighter"></div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="title">
+                            <a href="#">5. Позики, кредитні картки, кредитні спілки</a>
+                        </div>
+                        <div class="content">
+                            <div class="content-item head">
+                                <div>
+                                </div>
+                                <div>
+                                    <span>Періодичність</span>
+                                </div>
+                                <div>
+                                    <span>Сума</span>
+                                </div>
+                                <div>
+                                    <span>Всього в рік</span>                </div>
+                                </div>
+                                <div class="content-item">
+                                    <div>
+                                        <span>Іпотека</span>
+                                    </div>
+                                    <div class="inputData">
+                                        <select name="salaryFrequency" class="period">
+                                            <option value="Weekly" selected>Тижнева</option>
+                                            <option value="Monthly">Місячна</option>
+                                            <option value="Annualy">Річна</option>
+                                        </select>
+                                    </div>
+                                    <div class="inputData">
+                                        <input type="number" class="amount" min="0" max="10000" placeholder="грн 0" value="0">
+                                    </div>
+                                    <div class="amountTotal"><span>грн</span> 0</div>
+                                </div>
+                                <div class="content-item lighter">
+                                    <div>
+                                        <span>Особисті позики</span>
+                                    </div>
+                                    <div class="inputData">
+                                        <select name="salaryFrequency" class="period">
+                                            <option value="Weekly" selected>Тижнева</option>
+                                            <option value="Monthly">Місячна</option>
+                                            <option value="Annualy">Річна</option>
+                                        </select>
+                                    </div>
+                                    <div class="inputData">
+                                        <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                                    </div>
+                                    <div class="amountTotal"><span>грн </span> 0</div>
+                                </div>
+                                <div class="content-item">
+                                    <div>
+                                        <span>Платежі кредитна карта №1</span>
+                                    </div>
+                                    <div class="inputData">
+                                        <select name="salaryFrequency" class="period">
+                                            <option value="Weekly" selected>Тижнева</option>
+                                            <option value="Monthly">Місячна</option>
+                                            <option value="Annualy">Річна</option>
+                                        </select>
+                                    </div>
+                                    <div class="inputData">
+                                        <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                                    </div>
+                                    <div class="amountTotal">грн 0
+                                    </div>
+                                </div>
+                                <div class="content-item lighter">
+                                    <div>
+                                        <span>Платежі кредитна карта №2</span>
+                                    </div>
+                                    <div class="inputData">
+                                        <select name="salaryFrequency" class="period">
+                                            <option value="Weekly" selected>Тижнева</option>
+                                            <option value="Monthly">Місячна</option>
+                                            <option value="Annualy">Річна</option>
+                                        </select>
+                                    </div>
+                                    <div class="inputData">
+                                        <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                                    </div>
+                                    <div class="amountTotal"><span>грн </span>0</div>
+                                </div>
+                                <div class="content-item">
+                                    <div>
+                                        <span>Платежі кредитна спілка</span>
+                                    </div>
+                                    <div class="inputData">
+                                        <select name="salaryFrequency" class="period">
+                                            <option value="Weekly" selected>Тижнева</option>
+                                            <option value="Monthly">Місячна</option>
+                                            <option value="Annualy">Річна</option>
+                                        </select>
+                                    </div>
+                                    <div class="inputData">
+                                        <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                                    </div>
+                                    <div class="amountTotal"><span>грн </span>0</div>
+                                </div>
+                                <div class="content-item lighter">
+                                    <div>
+                                        <span>Інше платежі за позиками</span>
+                                    </div>
+                                    <div class="inputData">
+                                        <select name="salaryFrequency" class="period">
+                                            <option value="Weekly" selected>Тижнева</option>
+                                            <option value="Monthly">Місячна</option>
+                                            <option value="Annualy">Річна</option>
+                                        </select>
+                                    </div>
+                                    <div class="inputData">
+                                        <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                                    </div>
+                                    <div class="amountTotal"><span>грн </span>0</div>
+                                </div>
+                                <div class="total">
+                                    
+                                </div>
+                                <div class="content-item lighter"></div>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="title">
+                                <a href="#">6. Податки та збори</a>
+                            </div>
+                            <div class="content">
+                                <div class="content-item head">
+                                    <div>
+                                    </div>
+                                    <div>
+                                        <span>Періодичність</span>
+                                    </div>
+                                    <div>
+                                        <span>Сума</span>
+                                    </div>
+                                    <div>
+                                        <span>Всього в рік</span>                </div>
+                                    </div>
+                                    <div class="content-item">
+                                        <div>
+                                            <span>Збори та обов'язки</span>
+                                        </div>
+                                        <div class="inputData">
+                                            <select name="salaryFrequency" class="period">
+                                                <option value="Weekly" selected>Тижнева</option>
+                                                <option value="Monthly">Місячна</option>
+                                                <option value="Annualy">Річна</option>
+                                            </select>
+                                        </div>
+                                        <div class="inputData">
+                                            <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                                        </div>
+                                        <div class="amountTotal"><span>грн </span> 0</div>
+                                    </div>
+                                    <div class="content-item lighter">
+                                        <div>
+                                            <span>Податки на інвестиції</span>
+                                        </div>
+                                        <div class="inputData">
+                                            <select name="salaryFrequency" class="period">
+                                                <option value="Weekly" selected>Тижнева</option>
+                                                <option value="Monthly">Місячна</option>
+                                                <option value="Annualy">Річна</option>
+                                            </select>
+                                        </div>
+                                        <div class="inputData">
+                                            <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                                        </div>
+                                        <div class="amountTotal"><span>грн </span> 0</div>
+                                    </div>
+                                    <div class="content-item">
+                                        <div>
+                                            <span>Інше</span>
+                                        </div>
+                                        <div class="inputData">
+                                            <select name="salaryFrequency" class="period">
+                                                <option value="Weekly" selected>Тижнева</option>
+                                                <option value="Monthly">Місячна</option>
+                                                <option value="Annualy">Річна</option>
+                                            </select>
+                                        </div>
+                                        <div class="inputData">
+                                            <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                                        </div>
+                                        <div class="amountTotal"><span>грн </span>0</div>
+                                    </div>
+                                    <div class="total">
+                                        
+                                    </div>
+                                    <div class="content-item lighter"></div>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="title">
+                                    <a href="#">7. Дозвілля / розваги</a>
+                                </div>
+                                <div class="content">
+                                    <div class="content-item head">
+                                        <div>
+                                        </div>
+                                        <div>
+                                            <span>Періодичність</span>
+                                        </div>
+                                        <div>
+                                            <span>Сума</span>
+                                        </div>
+                                        <div>
+                                            <span>Всього в рік</span>                </div>
+                                        </div>
+                                        <div class="content-item">
+                                            <div>
+                                                <span>Свята</span>
+                                            </div>
+                                            <div class="inputData">
+                                                <select name="salaryFrequency" class="period">
+                                                    <option value="Weekly" selected>Тижнева</option>
+                                                    <option value="Monthly">Місячна</option>
+                                                    <option value="Annualy">Річна</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputData">
+                                                <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                                            </div>
+                                            <div class="amountTotal"><span>грн </span> 0</div>
+                                        </div>
+                                        <div class="content-item lighter">
+                                            <div>
+                                                <span>Ресторани, екскурсії</span>
+                                            </div>
+                                            <div class="inputData">
+                                                <select name="salaryFrequency" class="period">
+                                                    <option value="Weekly" selected>Тижнева</option>
+                                                    <option value="Monthly">Місячна</option>
+                                                    <option value="Annualy">Річна</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputData">
+                                                <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                                            </div>
+                                            <div class="amountTotal"><span>грн </span> 0</div>
+                                        </div>
+                                        <div class="content-item">
+                                            <div>
+                                                <span>Спорт, хоббі, членство</span>
+                                            </div>
+                                            <div class="inputData">
+                                                <select name="salaryFrequency" class="period">
+                                                    <option value="Weekly" selected>Тижнева</option>
+                                                    <option value="Monthly">Місячна</option>
+                                                    <option value="Annualy">Річна</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputData">
+                                                <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                                            </div>
+                                            <div class="amountTotal">грн 0
+                                            </div>
+                                        </div>
+                                        <div class="content-item lighter">
+                                            <div>
+                                                <span>Книжки, газети, журнали</span>
+                                            </div>
+                                            <div class="inputData">
+                                                <select name="salaryFrequency" class="period">
+                                                    <option value="Weekly" selected>Тижнева</option>
+                                                    <option value="Monthly">Місячна</option>
+                                                    <option value="Annualy">Річна</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputData">
+                                                <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                                            </div>
+                                            <div class="amountTotal">грн 0
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            <div>
+                                                <span>Подарунки інше</span>
+                                            </div>
+                                            <div class="inputData">
+                                                <select name="salaryFrequency" class="period">
+                                                    <option value="Weekly" selected>Тижнева</option>
+                                                    <option value="Monthly">Місячна</option>
+                                                    <option value="Annualy">Річна</option>
+                                                </select>
+                                            </div>
+                                            <div class="inputData">
+                                                <input type="number" class="amount" min="0" max="10000" placeholder="грн 0">
+                                            </div>
+                                            <div class="amountTotal">грн 0
+                                            </div>
+                                        </div>
+                                        <div class="total">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="items" id="result">
+                                    <div class="title">
+                                        <a href="#">Результат</a>
+                                    </div>
+                                    <div class="content">
+                                        <div class="content-item head">
+                                            <div>
+                                            </div>
+                                            <div>
+                                                <span>Всього в тиждень</span>
+                                            </div>
+                                            <div>
+                                                <span>Всього в місяць</span>
+                                            </div>
+                                            <div>
+                                                <span>Всього в рік</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item result-income-expensive income">
+                                            <div>
+                                                <span>Відомості про доходи</span>
+                                            </div>
+                                            <div class="weekly">
+                                            </div>
+                                            <div class="monthly">
+                                            </div>
+                                            <div class="annualy">
+                                            </div>
+                                        </div>
+                                        <div class="content-item lighter result-income-expensive expensive">
+                                            <div>
+                                                <span>Автомобіль / Транспорт</span>
+                                            </div>
+                                            <div class="weekly">
+                                            </div>
+                                            <div class="monthly">
+                                            </div>
+                                            <div class="annualy">
+                                            </div>
+                                        </div>
+                                        <div class="content-item result-income-expensive expensive">
+                                            <div>
+                                                <span>Витрати на життя</span>
+                                            </div>
+                                            <div class="weekly">
+                                            </div>
+                                            <div class="monthly">
+                                            </div>
+                                            <div class="annualy">
+                                            </div>
+                                        </div>
+                                        <div class="content-item lighter result-income-expensive expensive">
+                                            <div>
+                                                <span>Страхування/пенсійне страхування</span>
+                                            </div>
+                                            <div class="weekly">
+                                            </div>
+                                            <div class="monthly">
+                                            </div>
+                                            <div class="annualy">
+                                            </div>
+                                        </div>
+                                        <div class="content-item result-income-expensive expensive">
+                                            <div>
+                                                <span>Позики, кредитні картки, кредитні спілки</span>
+                                            </div>
+                                            <div class="weekly">
+                                            </div>
+                                            <div class="monthly">
+                                            </div>
+                                            <div class="annualy">
+                                            </div>
+                                        </div>
+                                        <div class="content-item lighter result-income-expensive expensive">
+                                            <div>
+                                                <span>Податки та збори</span>
+                                            </div>
+                                            <div class="weekly">
+                                            </div>
+                                            <div class="monthly">
+                                            </div>
+                                            <div class="annualy">
+                                            </div>
+                                        </div>
+                                        <div class="content-item result-income-expensive expensive">
+                                            <div>
+                                                <span>Дозвілля / розваги</span>
+                                            </div>
+                                            <div class="weekly">
+                                            </div>
+                                            <div class="monthly">
+                                            </div>
+                                            <div class="annualy">
+                                            </div>
+                                        </div>
+                                        <div class="content-item lighter">
+                                            <div>
+                                                <span>Всього доходів</span>
+                                            </div>
+                                            <div class="weekly total-income">
+                                            </div>
+                                            <div class="monthly total-income">
+                                            </div>
+                                            <div class="annualy total-income">
+                                            </div>
+                                        </div>
+                                        <div class="content-item lighter">
+                                            <div>
+                                                <span>Всього витрат</span>
+                                            </div>
+                                            <div class="weekly total-expensive">
+                                            </div>
+                                            <div class="monthly total-expensive">
+                                            </div>
+                                            <div class="annualy total-expensive">
+                                            </div>
+                                        </div>
+                                        <div class="content-item lighter">
+                                            <div>
+                                                <span>Сальдо</span>
+                                            </div>
+                                            <div class="surplus weekly">
+                                            </div>
+                                            <div class="surplus monthly">
+                                            </div>
+                                            <div class="surplus annualy">
+                                            </div>
+                                        </div>
+                                        <div class="content-item lighter">
+                                        </div>
+                                        <div id="wrapperFooterButton">
+                                            <button id="clearAll">Очистити всі дані</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="footer">
+                                    <div>
+                                        <img src="assets/img/icons8Question.png" alt="">
+                                        <a href="#">Припущення</a>
+                                        <a href="#">Застереження</a>
+                                    </div>
+                                    <div id="assumptions">
+                                        <div>
+                                            <div>
+                                                <p>! Припущення</p>
+                                            </div>
+                                            <div>
+                                                <img src="assets/img/icons8Delete.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h2>Інформація про калькулятор</h2>
+                                            <p>
+                                                Калькулятор допомагає краще зрозуміти свої фінанси.
+                                                Ви не повинні заповнювати всі поля - вводьте інформацію стільки скільки потрібно.
+                                                Інформація, що міститься в Калькуляторі, така як наведені процентні ставки та інші цифри за замовчуванням,
+                                                використані в припущеннях, можуть істотно відрізнятися з часом і можуть бути змінені.
+                                                Калькулятор не враховує будь-які інвестиційні ризики, пов'язані з вашими заощадженнями.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div id="disclaimer">
+                                        <div>
+                                            <div>
+                                                <p>! Застереження</p>
+                                            </div>
+                                            <div>
+                                                <img src="assets/img/icons8Delete.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>Калькулятор та надані результати є загальними і не беруть до уваги ваші особисті обставини.
+                                                Калькулятор не покликаний використовуватись для прийняття рішення стосовно фінансового продукту або інтересу
+                                                до фінансового продукту. Перш ніж приймати будь-які рішення, зокрема про те, чи придбати або змінити
+                                                інтерес до фінансового продукту, ви повинні отримати професійну консультацію. У межах, дозволених законом,
+                                                КНПФ НБУ не несуть відповідальності за будь-які збитки, що виникли внаслідок використання інформації,
+                                            отриману за допомогою цього Калькулятора.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                            // обновляем данные на странице
+                            calculateAndShowResult();
+                            // скрываем все блоки и при клике открываем соответствующий блок
+                            $(document).on("click", ".title", function (e) {
+                            $(".content").css({'display':'none'})
+                            $(this).next(".content").css({'display': 'block'});
+                            })
+                            // при клике на инпуте или селекте пересчитываем все значения и переписываем везде данные
+                            $(".amount, .period").on("input", function(e){
+                            calculateAndShowResult();
+                            })
+                            //очищаем все данные форм
+                            $("#clearAll").on("click", function(){
+                            $("input").val("");
+                            $("option:selected").prop("selected", false);
+                            calculateAndShowResult();
+                            })
+                            // припущення та застереження прячем показываем
+                            $("#footer div a:nth-child(2)").on("click", function () {
+                            $("#assumptions").css({'visibility':'visible'});
+                            })
+                            $("#footer div a:last-child").on("click", function () {
+                            $("#disclaimer").css({'visibility':'visible'});
+                            })
+                            $("#assumptions div div img").on("click", function () {
+                            $("#assumptions").css({'visibility':'hidden'});
+                            })
+                            $("#disclaimer div div img").on("click", function () {
+                            $("#disclaimer").css({'visibility':'hidden'});
+                            })
+                            function calculateAndShowResult() {
+                            // формируем массив значений форм селект
+                            let arrPeriod = new Array();
+                            $(".period").each(function () {
+                            arrPeriod.push($(this).val());
+                            });
+                            // формируем массив значений инпутов
+                            let arrAmount = new Array();
+                            $(".amount").each(function () {
+                            arrAmount.push($(this).val());
+                            });
+                            let res;
+                            for (let i = 0; i < arrPeriod.length; i++) {
+                            if (arrPeriod[i] == "Weekly") {
+                            res = Math.round(52 * arrAmount[i] * 10) / 10;
+                            $("div.amountTotal").eq(i).text(res);
+                            } else if (arrPeriod[i] == "Annualy") {
+                            res = Math.round(arrAmount[i] * 10) / 10;
+                            $("div.amountTotal").eq(i).text(res);
+                            } else if (arrPeriod[i] == "Monthly") {
+                            res = Math.round(12 * arrAmount[i] * 10) / 10;
+                            $("div.amountTotal").eq(i).text(res);
+                            }
+                            }
+                            // подсчитываем промежуточные тоталы в каждом items
+                            let resultAmount;
+                            let inputValue=0;
+                            let serviceVar; // служебная
+                            let resultMonthly; //для раздела RESULT
+                            let resultWeekly; //для раздела RESULT
+                            let totalExpensive=0;
+                            let totalIncome=0;
+                            for (let i=2; i<=$(".items").length; i++) {
+                            let resultAmount=0;
+                            let countIn = 0;
+                            $(".items:nth-child("+i+") .content-item .amountTotal").each(function(){
+                            resultAmount = resultAmount + Number($(".items:nth-child(" + i + ") .content-item .amountTotal").eq(countIn).text());
+                            countIn++;
+                            });
+                            // прописываем везде суммы доходов/затрат в соотв. блоках и во вкладку RESULT
+                            $(".items:nth-child(" + i + ") .content .total").html("<div>Загалом грн</div>"+resultAmount);
+                            // RESULT всього в рік, місяць, тиждень
+                            resultMonthly = resultAmount/12;
+                            resultWeekly = resultAmount/52;
+                            $(".result-income-expensive:nth-child("+i+") .annualy").text(resultAmount);
+                            $(".result-income-expensive:nth-child("+i+") .monthly").text(resultMonthly.toFixed(2));
+                            $(".result-income-expensive:nth-child("+i+") .weekly").text(resultWeekly.toFixed(2));
+                            //подсчитываем все затраты и доходы
+                            (i>2) ? totalExpensive += resultAmount : totalIncome += resultAmount;
+                            }
+                            //и прописываем их в соответствующие разделы вкладки RESULT
+                            // затраты
+                            $(".annualy.total-expensive").text(totalExpensive);
+                            $(".monthly.total-expensive").text((totalExpensive/12).toFixed(2));
+                            $(".weekly.total-expensive").text((totalExpensive/52).toFixed(2));
+                            //доходы
+                            $(".annualy.total-income").text(totalIncome);
+                            $(".monthly.total-income").text((totalIncome/12).toFixed(2));
+                            $(".weekly.total-income").text((totalIncome/52).toFixed(2));
+                            // считаем и выводим сальдо
+                            $(".annualy.surplus").text(totalIncome-totalExpensive);
+                            $(".monthly.surplus").text(((totalIncome-totalExpensive)/12).toFixed(2));
+                            $(".weekly.surplus").text(((totalIncome-totalExpensive)/52).toFixed(2));
+                            }
+                            </script>
+                        </body>
+                    </html>

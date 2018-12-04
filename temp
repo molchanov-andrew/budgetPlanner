@@ -1,0 +1,67 @@
+<script>
+// обновляем данные на странице
+    calculateAndShowResult();
+// скрываем все блоки и при клике открываем соответствующий блок
+    $(document).on("click", ".title", function (e) {
+        $(".content").css({'display':'none'})
+        $(this).next(".content").css({'display': 'block'});
+    })
+// при клике на инпуте или селекте пересчитываем все значения и переписываем везде данные
+    $(".amount, .period").on("input", function(e){
+        calculateAndShowResult();
+    })
+
+
+function calculateAndShowResult() {
+
+    // формируем массив значений форм селект
+    let arrPeriod = new Array();
+
+    $(".period").each(function () {
+        arrPeriod.push($(this).val());
+    });
+    // формируем массив значений инпутов
+    let arrAmount = new Array();
+
+    $(".amount").each(function () {
+        arrAmount.push($(this).val());
+    });
+
+    let res;
+    for (let i = 0; i < arrPeriod.length; i++) {
+        if (arrPeriod[i] == "Weekly") {
+            res = Math.round(4 * arrAmount[i] * 10) / 10;
+            $("div.amountTotal").eq(i).text(res);
+        } else if (arrPeriod[i] == "Annualy") {
+            res = Math.round(arrAmount[i] / 12 * 10) / 10;
+            $("div.amountTotal").eq(i).text(res);
+        } else if (arrPeriod[i] == "Monthly") {
+            res = Math.round(arrAmount[i] * 10) / 10;
+            $("div.amountTotal").eq(i).text(res);
+        }
+
+    }
+
+    // подсчитываем промежуточные тоталы в каждом items
+    let resultAmount;
+    for (let i=2; i<=$(".items").length; i++) {
+        let resultAmount=0;
+        let countIn = 0;
+        $(".items:nth-child("+i+") .content-item .amountTotal").each(function(){
+            resultAmount = resultAmount + Number($(".items:nth-child(" + i + ") .content-item .amountTotal").eq(countIn).text());
+            countIn++;
+        });
+        // прописываем везде суммы доходов/затрат в соотв. блоках
+        $(".items:nth-child(" + i + ") .content .total").text("Загалом грн " + resultAmount);
+    }
+
+    // формируем массив значений промежуточных total
+    let arrTotal = new Array();
+
+    $(".total").each(function () {
+        arrTotal.push($(this).text());
+        console.log($(this).text());
+    })
+
+}
+    </script>

@@ -1,0 +1,193 @@
+#wrapper{
+    margin: auto;
+    background: #1c7935;
+    padding: 0 5px;
+    width: 618px;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px  #a9a9a9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+.items{
+
+}
+/*заголовки меню*/
+.title{
+    padding: 8px 0 8px 12px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: #1c7935;
+    border-top: 1px solid #fff;
+    background: linear-gradient(top, #eaeaea, #9fa2a4);
+
+}
+.title:hover{
+    background: linear-gradient(bottom, #eaeaea, #9fa2a4);
+}
+.title a:visited, .title a:link{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+
+
+.content{
+    background: #9fa2a4;
+    padding: 3px;
+    display: none;
+}
+.content-item{
+    line-height: 26px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: #ECECEC;
+
+}
+.lighter{
+    background: #fff;
+}
+.content-item div{
+    width: calc(100% - 300px - 5px); /*первый див в строке*/
+    margin: 0;
+    padding: 5px 10px 5px 10px;
+}
+.content-item div:last-child{
+    width: 130px; /*последний див в строке*/
+    text-align: right;
+    padding: 5px 10px 5px 0;
+}
+.content-item div:nth-child(2), .content-item div:nth-child(3){
+    text-align: center;
+    width: 140px;
+    padding: 5px 10px 5px 0;
+}
+/*шапка заголовка секции------*/
+.head{
+    text-align: right;
+}
+.head div:not(:first-child){
+    padding: 10px 5px 10px -10px;
+    color: rgb(255,255,255);
+    font-weight: bold;
+    font-size: 14px;
+}
+/*---------------------------*/
+.inputData{
+    width: 100px;
+}
+.inputData input{
+    margin: 0;
+    width: 100%;
+    border: 1px solid #d6d6d5;
+    border-radius: 5px;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+.inputData select{
+    width: 100%;
+    border: 1px solid #d6d6d5;
+}
+.total{
+    padding: 6px 10px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+.total *{
+    display: inline-block;
+    padding-right: 25px;
+}
+.content-item:first-child{
+    background: rgb(80, 116, 138);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.content-item:last-child{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 10px 0;
+
+}
+/*----------------------------------------------------*/
+#footer{
+    padding: 10px;
+    color: #fff;
+    position: relative;
+}
+#footer div{
+}
+#footer div img{
+    background: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+#footer div a{
+    color: #fff;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 5px;
+}
+#footer div a:hover{
+    text-decoration: underline;
+}
+#footer div p{
+    display: inline-block;
+    font-weight: bold;
+    padding-left: 10px;
+}
+#wrapperFooterButton{
+    text-align: right;
+    padding-top: 50px;
+    background: #1c7935;
+    margin: 0px -3px -3px -3px;
+    border-top: 3px solid #9fa2a4;
+}
+/*-------assumptions----------disclaimer-----------------*/
+#assumptions, #disclaimer{
+    border-radius: 8px;
+    padding: 8px 5px 5px 5px;
+    background: rgb(204, 204, 204);
+    border: 1px solid #c0c0c0;
+    box-shadow: 2px 2px 8px #a9a9a9;
+    visibility: hidden;
+    position: absolute;
+    left: 50px;
+    top: -250px;
+}
+#assumptions div div, #disclaimer div div{
+    text-align: right;
+    display: inline-block;
+    width: 48%;
+
+}
+#assumptions div div:first-child, #disclaimer div div:first-child{
+    text-align: left;
+}
+#assumptions div img, #disclaimer div img{
+    width: 20px;
+    height: 20px;
+    background: #1c7935;
+    border-radius: 50%;
+}
+#assumptions > div:last-child, #disclaimer > div:last-child{
+    background: white;
+}
+#assumptions div p, #disclaimer div p{
+    color: #666;
+    font-weight: normal;
+}
+#assumptions div h2, #disclaimer div h2{
+    color: #666;
+}
